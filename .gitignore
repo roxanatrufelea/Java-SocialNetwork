@@ -1,0 +1,5 @@
+# Project exclude paths
+/SocialNetwork/.gradle/
+/SocialNetwork/build/
+/SocialNetwork/build/classes/java/main/
+/SocialNetwork/build/classes/java/test/

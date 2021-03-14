@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="421.0" prefWidth="547.0" style="-fx-background-color: #077575;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controllers.SignInController">
+   <children>
+    <AnchorPane prefHeight="421.0" prefWidth="547.0" style="-fx-background-color: #006660;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="textFieldLastName" layoutX="404.0" layoutY="128.0" prefHeight="25.0" prefWidth="132.0" promptText="Last Name" />
+            <TextField fx:id="textFieldFirstName" layoutX="257.0" layoutY="128.0" prefHeight="25.0" prefWidth="132.0" promptText="First Name" />
+            <TextField fx:id="textFieldEmail" layoutX="257.0" layoutY="171.0" prefHeight="25.0" prefWidth="279.0" promptText="Email Address" />
+            <PasswordField fx:id="textFieldPassword" layoutX="257.0" layoutY="211.0" prefHeight="25.0" prefWidth="132.0" promptText="Password" />
+            <PasswordField fx:id="textFieldCheckPassword" layoutX="404.0" layoutY="211.0" prefHeight="25.0" prefWidth="132.0" promptText="Check Password" />
+            <ComboBox fx:id="cboxGender" layoutX="257.0" layoutY="304.0" prefWidth="150.0" promptText="Gender" style="-fx-background-color: #e6ff99;" />
+            <ComboBox fx:id="cboxYear" layoutX="456.0" layoutY="269.0" prefHeight="25.0" prefWidth="79.0" promptText="Year" style="-fx-background-color: #CCFF00;" />
+            <ComboBox fx:id="cboxMonth" layoutX="257.0" layoutY="269.0" prefHeight="25.0" prefWidth="105.0" promptText="Month" style="-fx-background-color: #CCFF00;" />
+            <ComboBox fx:id="cboxDay" layoutX="369.0" layoutY="269.0" prefHeight="25.0" prefWidth="79.0" promptText="Day" style="-fx-background-color: #CCFF00;" />
+            <Label layoutX="351.0" layoutY="239.0" prefHeight="17.0" prefWidth="105.0" text="Date of birth" textFill="#eceee0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="317.0" layoutY="367.0" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="25.0" prefWidth="174.0" style="-fx-background-color: yellow;" text="SignUp" />
+            <ImageView fitHeight="25.0" fitWidth="48.0" layoutX="511.0" layoutY="14.0" onMouseClicked="#handleCancel" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/close.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="359.0" fitWidth="234.0" layoutX="14.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/mm.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="77.0" fitWidth="105.0" layoutX="355.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/signup.jpg" />
+               </image>
+            </ImageView>
+            <Separator layoutX="245.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="421.0" prefWidth="6.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

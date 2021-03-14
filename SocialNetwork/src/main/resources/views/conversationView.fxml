@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controllers.ConversationController">
+   <children>
+      <BorderPane layoutX="-3.0" layoutY="-4.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #035b5b;">
+         <center>
+            <TableView fx:id="tableView" prefHeight="239.0" prefWidth="452.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="tableColumnFrom" prefWidth="92.33334481716156" text="From" />
+                <TableColumn fx:id="tableColumnMessage" prefWidth="155.33333587646484" text="Message" />
+                 <TableColumn fx:id="tableColumnReply" prefWidth="82.66667175292969" text="Reply" />
+                 <TableColumn fx:id="tableColumnDate" prefWidth="126.6666259765625" text="Date" />
+              </columns>
+            </TableView>
+         </center>
+         <right>
+            <AnchorPane prefHeight="267.0" prefWidth="62.0" style="-fx-background-color: #077575;" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <AnchorPane prefHeight="42.0" prefWidth="600.0" style="-fx-background-color: #035b5b;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <TextArea fx:id="textAreaMessage" layoutX="85.0" layoutY="4.0" prefHeight="48.0" prefWidth="353.0" />
+                  <Button layoutX="450.0" layoutY="12.0" mnemonicParsing="false" onAction="#handlesendMessage" prefHeight="30.0" prefWidth="46.0" style="-fx-background-color: yellow;" text="Send" />
+                  <Button layoutX="519.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleReply" prefHeight="30.0" prefWidth="46.0" style="-fx-background-color: #CCFF00;" text="Reply" />
+               </children>
+            </AnchorPane>
+         </bottom>
+         <left>
+            <AnchorPane prefHeight="277.0" prefWidth="86.0" style="-fx-background-color: #077575;" BorderPane.alignment="CENTER" />
+         </left>
+         <top>
+            <AnchorPane prefHeight="83.0" prefWidth="600.0" style="-fx-background-color: #006660;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="textFieldMonth" layoutX="203.0" layoutY="42.0" onKeyTyped="#textFieldFilter" onMouseClicked="#handleCleanFieldMonth" prefHeight="25.0" prefWidth="53.0" text="Month" />
+                  <TextField fx:id="textFieldYear" layoutX="276.0" layoutY="42.0" onKeyTyped="#textFieldFilter" onMouseClicked="#handleCleanFieldYear" prefHeight="25.0" prefWidth="48.0" text="Year" />
+                  <Button layoutX="473.0" layoutY="42.0" mnemonicParsing="false" onAction="#handlePDF" prefHeight="25.0" prefWidth="42.0" style="-fx-background-color: #CCFF00;" text="PDF" />
+                  <TextField fx:id="textFieldDay" layoutX="147.0" layoutY="42.0" onKeyTyped="#textFieldFilter" onMouseClicked="#handleCleanFieldDay" prefHeight="25.0" prefWidth="38.0" text="Day" />
+                  <Label layoutX="203.0" layoutY="5.0" prefHeight="31.0" prefWidth="74.0" text="  Filter">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="14.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+                  <Button layoutX="522.0" layoutY="42.0" mnemonicParsing="false" onAction="#handleParticipants" style="-fx-background-color: yellow;" text="Users" />
+                  <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="578.0" layoutY="9.0" onMouseClicked="#handleClose" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/close.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

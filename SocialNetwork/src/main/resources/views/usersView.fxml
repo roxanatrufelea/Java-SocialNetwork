@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="421.0" prefWidth="547.0" style="-fx-background-color: #077575;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controllers.MainController">
+   <children>
+    <AnchorPane fx:id="anchorPaneRight" layoutX="7.0" layoutY="6.0" prefHeight="421.0" prefWidth="547.0" style="-fx-background-color: #006660;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="334.0" layoutY="291.0" mnemonicParsing="false" onAction="#handleLogIn" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #79ff4d;" text="LOG IN" />
+            <VBox layoutX="282.0" layoutY="179.0" prefHeight="91.0" prefWidth="256.0">
+               <children>
+                  <HBox prefHeight="61.0" prefWidth="256.0">
+                     <children>
+                        <TextField fx:id="textFieldEmail" prefHeight="33.0" prefWidth="221.0" promptText="Email" />
+                        <ImageView fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/userIcon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="47.0" prefWidth="256.0" />
+                  <HBox prefHeight="57.0" prefWidth="256.0">
+                     <children>
+                        <PasswordField fx:id="textFieldPassword" prefHeight="33.0" prefWidth="228.0" promptText="Password" />
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icon-locked-512.png" />
+                           </image>
+                        </ImageView>
+                     </children></HBox>
+               </children>
+            </VBox>
+            <Button layoutX="363.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleSignUp" style="-fx-background-color: yellow;" text="SIGN UP" />
+            <ImageView fitHeight="357.0" fitWidth="235.0" layoutX="19.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/mm.jpg" />
+               </image>
+            </ImageView>
+            <Separator layoutX="268.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="410.0" prefWidth="1.0" />
+            <Separator layoutY="-2.0" prefHeight="12.0" prefWidth="271.0" />
+            <Separator layoutX="-6.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="410.0" prefWidth="17.0" />
+            <Separator layoutX="1.0" layoutY="403.0" prefHeight="12.0" prefWidth="271.0" />
+            <ImageView fitHeight="91.0" fitWidth="222.0" layoutX="313.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/login-illustration-letter-cubes-forming-word-36025252.jpg" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

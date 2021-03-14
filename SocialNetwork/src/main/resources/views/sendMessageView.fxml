@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #006660;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controllers.SendMessageController">
+   <children>
+      <TableView fx:id="tableView" layoutX="21.0" layoutY="99.0" prefHeight="194.0" prefWidth="256.0">
+        <columns>
+          <TableColumn fx:id="tableColumnFirstName" prefWidth="131.00000762939453" text="First Name " />
+          <TableColumn fx:id="tableColumnLastName" prefWidth="120.99998474121094" text="Last Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="427.0" layoutY="204.0" mnemonicParsing="false" onAction="#handleNewGroup" style="-fx-background-color: yellow;" text="New Group" />
+      <TextField fx:id="textFieldNameGroup" layoutX="379.0" layoutY="116.0" onMouseClicked="#handleCleanField" prefHeight="43.0" prefWidth="173.0" promptText="Give a name to the group" />
+      <AnchorPane layoutY="-6.0" prefHeight="76.0" prefWidth="601.0" style="-fx-background-color: #035b5b;">
+         <children>
+      
+            <Label layoutX="19.0" layoutY="31.0" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #33ff99;" text="  Search">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldName" layoutX="111.0" layoutY="32.0" onKeyTyped="#textFieldFilter" promptText="Find by name" />
+            <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="563.0" layoutY="14.0" onMouseClicked="#handleClose" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/close.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Separator layoutY="71.0" prefHeight="0.0" prefWidth="601.0" />
+      <Button fx:id="btnPrevious" layoutX="21.0" layoutY="321.0" mnemonicParsing="false" onAction="#handlePrevious" text="Previous" />
+      <Button fx:id="btnNext" layoutX="235.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleNext" text="Next" />
+      <Label fx:id="labelPageNumber" layoutX="123.0" layoutY="321.0" prefHeight="25.0" prefWidth="52.0" text="Label" />
+   </children>
+</AnchorPane>
